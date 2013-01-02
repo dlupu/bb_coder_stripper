@@ -1,0 +1,10 @@
+== Welcome
+
+This is just a tool I used in order to strip some bbcodes from a phpbb mysql dump. The main idea is to take advantage of ActiveRecord database connector to speed up processing.
+
+== How to use :
+
+1. Update the file config/database.yml if needed  (point you development database to the phpbb mysql database)
+2. In terminal, run 'rails console'
+3. Execute 'User.sanitize_bb'
+4. Execute 'Post.sanitize_bb'
