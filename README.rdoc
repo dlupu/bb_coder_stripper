@@ -8,3 +8,5 @@ This is just a tool I used in order to strip some bbcodes from a phpbb mysql dum
 2. In terminal, run 'rails console'
 3. Execute 'User.sanitize_bb'
 4. Execute 'Post.sanitize_bb'
+
+*Note* : Execute steps 3 and 4 several times (until you get the following message in the terminal 'updated O users/posts'). Reason : bbcodes that are wrongly closed (e.g "[b][u] x [/b][/u]" instead of "[b][u] x [/u][/b]")
